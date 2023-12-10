@@ -77,11 +77,12 @@ public class Main {
                         System.out.println("Завершение программы.");
 
 
-                    }
+                    } default:
+                        System.out.println("Повторите еще раз ");
 
                     }
 
-            } while (choose != 5);
+            } while (choose != 5 );
 
             scanner.close();
         }

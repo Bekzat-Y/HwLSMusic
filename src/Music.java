@@ -47,7 +47,7 @@ public class Music {
 
             d.browse(new URI(
                     String.format(
-                            "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+                            "https://www.youtube.com/watch?v=Z3J_MCbwaJ0&ab_channel=RoshiyoKur%C3%AD",
                             URLEncoder.encode( "UTF8" )
                     )
             ));
