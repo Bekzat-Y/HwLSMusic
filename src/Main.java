@@ -78,11 +78,9 @@ public class Main {
 
 
                     }
-                    default: {
-                        System.out.println("Введите допустимую опцию.");
-                        break;
+
                     }
-                }
+
             } while (choose != 5);
 
             scanner.close();
