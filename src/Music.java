@@ -1,3 +1,8 @@
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -36,5 +41,20 @@ public class Music {
             return "Название: " + name + ", Исполнитель: " + executor + ", Длительность: " + duration;
         }
     }
-    
+    public static void buySubscribe() {
+        try {
+            Desktop d=Desktop.getDesktop();
+
+            d.browse(new URI(
+                    String.format(
+                            "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+                            URLEncoder.encode( "UTF8" )
+                    )
+            ));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } catch (URISyntaxException use) {
+            use.printStackTrace();
+        }
+    }
 }

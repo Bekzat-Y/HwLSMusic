@@ -1,8 +1,3 @@
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
@@ -75,7 +70,7 @@ public class Main {
                         break;
                     }
                     case 4: {
-                        buySubscribe();
+                        Music.buySubscribe();
                         break;
                     }
                     case 5:{
@@ -91,22 +86,8 @@ public class Main {
 
             scanner.close();
         }
-    public static void buySubscribe() {
-        try {
-            Desktop d=Desktop.getDesktop();
 
-            d.browse(new URI(
-                    String.format(
-                           "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
-                            URLEncoder.encode( "UTF8" )
-                    )
-            ));
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        } catch (URISyntaxException use) {
-            use.printStackTrace();
-        }
-    }
+
 }
 
 
