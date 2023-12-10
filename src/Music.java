@@ -52,7 +52,7 @@ public class Music {
                     )
             ));
         } catch (IOException | URISyntaxException ioe) {
-            ioe.printStackTrace();
+            System.out.println("Hahahaha");
         }
     }
 }

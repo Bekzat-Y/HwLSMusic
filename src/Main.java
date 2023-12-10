@@ -76,13 +76,14 @@ public class Main {
                     case 5:{
                         System.out.println("Завершение программы.");
 
+
                     }
                     default: {
                         System.out.println("Введите допустимую опцию.");
                         break;
                     }
                 }
-            } while (choose != 4);
+            } while (choose != 5);
 
             scanner.close();
         }
