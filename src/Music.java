@@ -51,10 +51,8 @@ public class Music {
                             URLEncoder.encode( "UTF8" )
                     )
             ));
-        } catch (IOException ioe) {
+        } catch (IOException | URISyntaxException ioe) {
             ioe.printStackTrace();
-        } catch (URISyntaxException use) {
-            use.printStackTrace();
         }
     }
 }
