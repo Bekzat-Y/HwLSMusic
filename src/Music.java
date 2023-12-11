@@ -26,7 +26,7 @@ public class Music {
         private String executor;
         private double duration;
 
-        public Song(String name, String executor, double duration) {
+        public Song(String name, String executor, double duration) { //Сохраняет название итд
             this.name = name;
             this.executor = executor;
             this.duration = duration;
@@ -55,4 +55,5 @@ public class Music {
             System.out.println("Hahahaha");
         }
     }
+
 }
