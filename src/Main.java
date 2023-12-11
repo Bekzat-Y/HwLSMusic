@@ -78,14 +78,15 @@ public class Main {
 
 
                     } default:
-                        System.out.println("Повторите еще раз ");
+                        System.out.println("Введите существуещий кейс! ");
 
                     }
 
             } while (choose != 5 );
 
             scanner.close();
-        }
+
+    }
 
 
 }
